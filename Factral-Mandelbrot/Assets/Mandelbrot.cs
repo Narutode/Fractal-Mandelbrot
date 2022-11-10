@@ -29,13 +29,31 @@ public class Mandelbrot : MonoBehaviour
         iStart = -1.25;
         zoom = 10;
         maxIterations = 100;
+        
         display = new Texture2D(Screen.width, Screen.height);
+        RunMandelbrot();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetMouseButtonDown(0))
+        {
+            rStart = rStart + (Input.mousePosition.x - (Screen.width / 2f)) / Screen.width * width;
+            iStart = iStart + (Input.mousePosition.y - (Screen.height / 2f)) / Screen.height * height;
+            RunMandelbrot();
+        }
+
+        if (Input.mouseScrollDelta.y != 0)
+        {
+            double wFactor = width * (double)Input.mouseScrollDelta.y / zoom;
+            double hFactor = height * (double)Input.mouseScrollDelta.y / zoom;
+            width -= wFactor;
+            height -= hFactor;
+            rStart += wFactor / 2f;
+            iStart += hFactor / 2f;
+            RunMandelbrot();
+        }
     }
 
     void RunMandelbrot()
