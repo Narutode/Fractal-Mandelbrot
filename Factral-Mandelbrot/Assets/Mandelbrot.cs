@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Numerics;
 using UnityEngine;
 using UnityEngine.UI;
+using Vector2 = UnityEngine.Vector2;
 using Vector4 = UnityEngine.Vector4;
 
 public class Mandelbrot : MonoBehaviour
@@ -37,6 +38,21 @@ public class Mandelbrot : MonoBehaviour
         
     }
 
+    void RunMandelbrot()
+    {
+        for (int x = 0; x != display.width; x++)
+        {
+            for (int y = 0; y != display.height; y++)
+            {
+                display.SetPixel(x, y, SetColor(MandelbrotFunction(rStart + width * (double)x / display.width,
+                    iStart + height * (double)y / display.height)));
+            }
+        }
+        
+        display.Apply();
+        image.sprite = Sprite.Create(display, new Rect(0, 0, display.width, display.height), new Vector2(0.5f, 0.5f));
+    }
+    
     int MandelbrotFunction(double x, double y)
     {
         int iteration = 0;
