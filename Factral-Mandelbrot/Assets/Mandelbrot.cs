@@ -78,7 +78,7 @@ public class Mandelbrot : MonoBehaviour
 
         for (int i = 0; i != maxIterations; i++)
         {
-            z = z * z + new Complex(x, y);
+            z = z * z * z * z + new Complex(x, y);
 
             if (Complex.Abs(z) > 2)
             {
