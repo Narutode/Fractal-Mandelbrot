@@ -30,7 +30,7 @@ public class Mandelbrot : MonoBehaviour
         zoom = 10;
         maxIterations = 100;
         
-        display = new Texture2D(Screen.width, Screen.height);
+        display = new Texture2D(Screen.width,Screen.height);
         RunMandelbrot();
     }
 
@@ -105,22 +105,22 @@ public class Mandelbrot : MonoBehaviour
             {
                 case 0:
 					{
-						CalcColor[0] = 66.0f / 255.0f;
-						CalcColor[1] = 30.0f / 255.0f;
-						CalcColor[2] = 15.0f / 255.0f;
+						CalcColor[0] = 47.0f / 255.0f;
+						CalcColor[1] = 4.0f / 255.0f;
+						CalcColor[2] = 16.0f / 255.0f;
 
 						break;
 					}
 				case 1:
 					{
-						CalcColor[0] = 25.0f / 255.0f;
+						CalcColor[0] = 75.0f / 255.0f;
 						CalcColor[1] = 7.0f / 255.0f;
 						CalcColor[2] = 26.0f / 255.0f;
 						break;
 					}
 				case 2:
 					{
-						CalcColor[0] = 9.0f / 255.0f;
+						CalcColor[0] = 59.0f / 255.0f;
 						CalcColor[1] = 1.0f / 255.0f;
 						CalcColor[2] = 47.0f / 255.0f;
 						break;
@@ -128,42 +128,42 @@ public class Mandelbrot : MonoBehaviour
 
 				case 3:
 					{
-						CalcColor[0] = 4.0f / 255.0f;
+						CalcColor[0] = 54.0f / 255.0f;
 						CalcColor[1] = 4.0f / 255.0f;
 						CalcColor[2] = 73.0f / 255.0f;
 						break;
 					}
 				case 4:
 					{
-						CalcColor[0] = 0.0f / 255.0f;
+						CalcColor[0] = 50.0f / 255.0f;
 						CalcColor[1] = 7.0f / 255.0f;
 						CalcColor[2] = 100.0f / 255.0f;
 						break;
 					}
 				case 5:
 					{
-						CalcColor[0] = 12.0f / 255.0f;
+						CalcColor[0] = 62.0f / 255.0f;
 						CalcColor[1] = 44.0f / 255.0f;
 						CalcColor[2] = 138.0f / 255.0f;
 						break;
 					}
 				case 6:
 					{
-						CalcColor[0] = 24.0f / 255.0f;
+						CalcColor[0] = 7.0f / 255.0f;
 						CalcColor[1] = 82.0f / 255.0f;
 						CalcColor[2] = 177.0f / 255.0f;
 						break;
 					}
 				case 7:
 					{
-						CalcColor[0] = 57.0f / 255.0f;
+						CalcColor[0] = 107.0f / 255.0f;
 						CalcColor[1] = 125.0f / 255.0f;
 						CalcColor[2] = 209.0f / 255.0f;
 						break;
 					}
 				case 8:
 					{
-						CalcColor[0] = 134.0f / 255.0f;
+						CalcColor[0] = 184.0f / 255.0f;
 						CalcColor[1] = 181.0f / 255.0f;
 						CalcColor[2] = 229.0f / 255.0f;
 						break;

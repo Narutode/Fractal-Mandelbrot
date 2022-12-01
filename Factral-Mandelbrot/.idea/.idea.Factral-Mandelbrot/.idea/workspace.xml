@@ -7,6 +7,8 @@
     <list default="true" id="13551874-ac3e-4d98-8297-28b85bdef5ca" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Factral-Mandelbrot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Factral-Mandelbrot/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Mandelbrot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mandelbrot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +78,7 @@
       <updated>1668074690725</updated>
       <workItem from="1668074696785" duration="2110000" />
       <workItem from="1668080278034" duration="1461000" />
+      <workItem from="1669885749331" duration="1694000" />
     </task>
     <servers />
   </component>
